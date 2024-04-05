@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color</title>
+    <script src="script1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="wrapper">
+                    <div class="color" id="randomColor"></div>
+                    <h1 id="hexa" hidden></h1>
+                    <div class="button-wrapper" hidden>
+                        <button class="btn fill" onclick="generarNuevoColor()">Generar color</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="wrapper">
+                    <input type="color" id="color" name="color" value="#FF0000">
+                    <div class="info">
+                        <h1 id="hex" hidden></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-full">
+                <div class="button-wrapper">
+                    <button class="btn fill" onclick="comparar()">Comparar color</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-full">
+                <h1 id="porcentaje"></h1>
+            </div>
+            <div class="col col-full">
+                <div class="button-wrapper">
+                    <button class="btn fill" onclick="generarNuevoColor()">Nuevo color</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
